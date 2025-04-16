@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                    <img src="Images/logo.png" class="logo"> 
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="c-icone" ><img src="Images/close.png" onclick="closemenu()" style="height: 40px; background-color: rgba(10, 10, 10, 0.999); border-radius: 5px;"></div>
+                </ul>
+              
+                <div  class="m-icone"><img src="Images/Menu-icone.png" onclick="openmenu()" style="height: 35px; background-color: rgb(251, 250, 250); border-radius: 5px;"></div>
+                
+            </nav>
+
+           <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Gaurav</span> <br>Gupta From India</h1>
+           </div>
+        </div>
+    </div>
+
+<!-- ----------------About------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"I am a highly motivated and fast learner who is 
+                        eager for personal and professional growth. I am 
+                        proficient in skills such as problem solving, 
+                        effective communication and teamwork. I have 
+                        the ability to take on new challenges and take 
+                        initiative. I am eager to apply my skills in a 
+                        dynamic work environment and contribute to the 
+                        success of the organization." </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Language</span><br>C, C++, Java,  JavaScript , Python</li>
+                                <li><span>Web Development</span><br>HTML,CSS, React, Bootstrap</li>
+                                <li><span>Database Management</span><br>MySQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Languages">
+                            <ul>
+                                <li><span>HINDI</span><br>--------------------------------</li>
+                                <li><span>ENGLISH</span><br>------------------</li>
+                                <li><span>MARATHI</span><br>------------------------</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>BE - Appearing</span><br>Govindrao wanjari collage of Engineering, Nagpur</li>
+                                <li><span>HSC - 2021</span><br>Abhinav Institute of Science, Nagpur</li>
+                                <li><span>SSC - 2019</span><br>Priyadarshini Convent, Nagpur</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------------Work------------------------------- -->
+
+ <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works & Certificates</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3>C & C++</h3>
+                    <a href="#"><i class="fas fa-external-link-alt">click</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.jpg">
+                <div class="layer">
+                    <h3>Java Programming</h3>
+                    <a href="#"><i class="fas fa-external-link-alt">click</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.jpg">
+
+                <div class="layer">
+                    <h3>Full Stack Developer</h3>
+                    <a href="#"><i class="fas fa-external-link-alt">click</i></a>
+                </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+ <!----------------------------CONTACT-------------------------------->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+
+                <!-- <p><img src="Images/Email.png" id="Email">
+                    <i id="EM">gauravgupta123225@gmail.com</i>
+                </p>
+                
+                <p> <img src="Images/Call.png" id="Call">
+                    <i id="CL">+91 *** *** 5690</i>
+                </p> -->
+            <p><i>gauravgupta123225@gmail.com</i>
+                <br> <br>
+                <i>+91 *** *** 5690</i>
+            </p>
+
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/GAURAVGUPTA04"><i> <img src="Images/Facebook.png" id="facebook"></i></a>
+
+                    <a href="https://www.instagram.com/__gaurav__7521?igsh=MWU0cHBiZml!MzUyMQ==" ><i><img src="Images/instagram.png" id="instagram"></i></a>
+
+                    <a href="https://github.com/gaurav-gupta5690"><i><img src="Images/github.png" id="github"></i> </a>
+                </div>
+                <a href="Images/Gaurav Gupta - [Resume(CV)].pdf" download class="btnn">Download CV</a>
+            </div>
+
+
+            <div class="contact-right">
+
+
+                <form name="submit-to-google-sheet">
+                   <input type="text" name="Name" placeholder="Enter Your Name" required>
+                   <input type="email" name="Email" placeholder="Enter Your Email" required>
+                   
+                   <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                   <button type="submit" class="btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+ </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
